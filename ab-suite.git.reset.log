@@ -1,0 +1,14 @@
+CPPFLAGS: 
+CFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -mthreads
+CXXFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1
+LDFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -static-libgcc -static-libstdc++
+vcs_reset origin/HEAD
+++ vcs_get_latest_tag origin/HEAD
+++ case $1 in
+++ false
+++ echo origin/HEAD
++ git checkout --no-track -fB ab-suite origin/HEAD
+Reset branch 'ab-suite'
++ git log --oneline --no-merges --no-color -n 1
++ tee /dev/null
+76a0ee2 Ext: Update to dav1d 1.4.0
