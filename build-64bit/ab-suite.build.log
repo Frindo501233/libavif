@@ -1,0 +1,35 @@
+CPPFLAGS: 
+CFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -mthreads
+CXXFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1
+LDFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -static-libgcc -static-libstdc++
+ninja -j10 
+[1/30] Building C object CMakeFiles/avif_obj.dir/src/alpha.c.o
+[2/30] Building C object CMakeFiles/avif_obj.dir/src/avif.c.o
+[3/30] Building C object CMakeFiles/avif_obj.dir/src/exif.c.o
+[4/30] Building C object CMakeFiles/avif_obj.dir/src/diag.c.o
+[5/30] Building C object CMakeFiles/avif_obj.dir/src/mem.c.o
+[6/30] Building C object CMakeFiles/avif_obj.dir/src/obu.c.o
+[7/30] Building C object CMakeFiles/avif_obj.dir/src/colr.c.o
+[8/30] Building C object CMakeFiles/avif_obj.dir/src/colrconvert.c.o
+[9/30] Building C object CMakeFiles/avif_obj.dir/src/rawdata.c.o
+[10/30] Building C object CMakeFiles/avif_obj.dir/src/io.c.o
+[11/30] Building C object CMakeFiles/avif_obj.dir/src/read.c.o
+[12/30] Building C object CMakeFiles/avif_obj.dir/src/reformat_libsharpyuv.c.o
+[13/30] Building C object CMakeFiles/avif_obj.dir/src/scale.c.o
+[14/30] Building C object CMakeFiles/avif_obj.dir/src/stream.c.o
+[15/30] Building C object CMakeFiles/avif_obj.dir/src/reformat_libyuv.c.o
+[16/30] Building C object CMakeFiles/avif_obj.dir/src/utils.c.o
+[17/30] Building C object CMakeFiles/avif_obj.dir/src/write.c.o
+[18/30] Building C object CMakeFiles/avif_obj.dir/third_party/libyuv/source/scale_common.c.o
+[19/30] Building C object CMakeFiles/avif_obj.dir/third_party/libyuv/source/scale.c.o
+[20/30] Building C object CMakeFiles/avif_obj.dir/third_party/libyuv/source/scale_any.c.o
+[21/30] Building C object CMakeFiles/avif_obj.dir/src/reformat.c.o
+[22/30] Building C object CMakeFiles/avif_obj.dir/third_party/libyuv/source/row_common.c.o
+[23/30] Building C object CMakeFiles/avif_obj.dir/third_party/libyuv/source/planar_functions.c.o
+[24/30] Building C object CMakeFiles/avif_obj.dir/src/codec_rav1e.c.o
+[25/30] Building C object CMakeFiles/avif_obj.dir/src/codec_dav1d.c.o
+[26/30] Building C object CMakeFiles/avif_obj.dir/src/codec_aom.c.o
+[27/30] Linking C static library libavif_internal.a
+[28/30] Generating avif_static_depends.c
+[29/30] Building C object CMakeFiles/avif_static.dir/avif_static_depends.c.o
+[30/30] Linking C static library libavif.a

@@ -1,0 +1,51 @@
+CPPFLAGS: 
+CFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -mthreads
+CXXFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1
+LDFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -static-libgcc -static-libstdc++
+cmake .. -G Ninja -DBUILD_SHARED_LIBS=off -DCMAKE_TOOLCHAIN_FILE=/local64/etc/toolchain.cmake -DCMAKE_INSTALL_PREFIX=/local64 -DUNIX=on -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_BINDIR=/local64/bin-video -DAVIF_ENABLE_WERROR=OFF -DAVIF_CODEC_DAV1D=ON -DAVIF_CODEC_RAV1E=ON -DAVIF_CODEC_AOM=ON -DAVIF_BUILD_APPS=OFF
+-- The C compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/admin/Desktop/1/1/msys64/mingw64/bin/ccache.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Warning at CMakeLists.txt:73 (message):
+  Setting AVIF_CODEC_AOM and AVIF_LOCAL_AOM is deprecated.  Set
+  AVIF_CODEC_AOM to SYSTEM instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:86 (set_codec_option)
+
+
+CMake Warning at CMakeLists.txt:73 (message):
+  Setting AVIF_CODEC_DAV1D and AVIF_LOCAL_DAV1D is deprecated.  Set
+  AVIF_CODEC_DAV1D to SYSTEM instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:87 (set_codec_option)
+
+
+CMake Warning at CMakeLists.txt:73 (message):
+  Setting AVIF_CODEC_RAV1E and AVIF_LOCAL_RAV1E is deprecated.  Set
+  AVIF_CODEC_RAV1E to SYSTEM instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:89 (set_codec_option)
+
+
+-- libavif: Enabling warnings for GCC
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Checking for module 'dav1d'
+--   Found dav1d, version 1.4.0
+-- Found dav1d: C:/Users/admin/Desktop/1/1/local64/lib/libdav1d.a (found version "1.4.0") 
+-- libavif: Codec enabled: dav1d (decode)
+-- Checking for module 'rav1e'
+--   Found rav1e, version 0.7.0
+-- Found rav1e: C:/Users/admin/Desktop/1/1/local64/lib/librav1e.a (found version "0.7.0") 
+-- libavif: Codec enabled: rav1e (encode)
+-- Checking for module 'aom'
+--   Found aom, version 3.8.1
+-- Found aom: C:/Users/admin/Desktop/1/1/local64/lib/libaom.a (found version "3.8.1") 
+-- libavif: Codec enabled: aom (encode/decode)
+-- Configuring done (4.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/admin/Desktop/1/1/build/libavif-git/build-64bit

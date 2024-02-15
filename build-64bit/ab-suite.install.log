@@ -1,0 +1,11 @@
+CPPFLAGS: 
+CFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -mthreads
+CXXFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1
+LDFLAGS: -D_FORTIFY_SOURCE=2 -fstack-protector-strong -mtune=generic -O2 -pipe -D__USE_MINGW_ANSI_STDIO=1 -static-libgcc -static-libstdc++
+ninja -j1 install
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Installing: C:/Users/admin/Desktop/1/1/local64/lib/libavif.a
+-- Installing: C:/Users/admin/Desktop/1/1/local64/lib/pkgconfig/libavif.pc
+-- Installing: C:/Users/admin/Desktop/1/1/local64/include/avif/avif.h
+-- Up-to-date: C:/Users/admin/Desktop/1/1/local64/include/avif/avif_cxx.h
